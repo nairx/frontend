@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-xl text-gray-900;
+  }
+  h1{
+    @apply text-xl;
+  }
+
+  table {
+    @apply w-full rounded-xl border-gray-300 m-3 p-3;
+  }
+
+  table td,th{
+    @apply p-3 m-1;
+  }
+
+  table th{
+    @apply bg-gray-300;
+  }
+
+  table tr{
+    @apply p-1;
+  }
+
+  form {
+    @apply w-[450px] rounded-2xl bg-white m-3 p-3 mx-auto;
+  }
+
+  form input{
+    @apply p-3 m-3 w-full;
+  }
+
+  form button{
+    @apply p-3 m-3 bg-orange-300 w-full;
+  }
+}
