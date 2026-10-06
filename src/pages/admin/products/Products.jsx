@@ -6,7 +6,6 @@ export default function Products() {
   const fetchProducts = async () => {
     try {
       const res = await api.get("/products");
-      console.log(res.data)
       setProducts(res.data);
     } catch (error) {
       console.log(error);
