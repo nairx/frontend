@@ -3,6 +3,7 @@ import api from "../../../api/axios";
 import { useNavigate } from "react-router-dom";
 export default function AddUser() {
   const [user, setUser] = useState({});
+
   const navigate = useNavigate();
   const handleAdd = async (e) => {
     try {

@@ -6,7 +6,6 @@ export default function Users() {
   const fetchUsers = async () => {
     try {
       const res = await api.get("/users");
-      console.log(res.data)
       setUsers(res.data);
     } catch (error) {
       console.log(error);
