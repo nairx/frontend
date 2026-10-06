@@ -8,6 +8,8 @@ import Register from "../pages/Register";
 import AddUser from "../pages/admin/users/AddUser";
 import Products from "../pages/admin/products/Products";
 import AddProduct from "../pages/admin/products/AddProduct";
+import DeleteUser from "../pages/admin/users/DeleteUser";
+import EditUser from "../pages/admin/users/EditUser";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,8 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <Users /> },
           { path: "users/add", element: <AddUser /> },
+          { path: "users/delete/:id", element: <DeleteUser /> },
+          { path: "users/edit/:id", element: <EditUser /> },
           { path: "products", element: <Products /> },
           { path: "products/add", element: <AddProduct /> },
         ],

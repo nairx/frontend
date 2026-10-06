@@ -17,8 +17,8 @@ export default function Users() {
   return (
     <div>
       <div className="flex justify-between">
-      <h1>User Management</h1>
-      <Link to="users/add">Add User</Link>
+        <h1>User Management</h1>
+        <Link to="users/add">Add User</Link>
       </div>
       <table>
         <thead>
@@ -36,7 +36,10 @@ export default function Users() {
                 <td>{user.name}</td>
                 <td>{user.email}</td>
                 <td>{user.role}</td>
-                <td>Delete Edit</td>
+                <td>
+                  <Link to={`users/edit/${user.id}`}>Edt</Link>
+                  <Link to={`users/delete/${user.id}`}>Delete</Link>
+                </td>
               </tr>
             ))}
         </tbody>
