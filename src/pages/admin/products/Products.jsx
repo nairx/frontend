@@ -39,7 +39,10 @@ export default function Products() {
                 <td>{product.description}</td>
                 <td>{product.price}</td>
                 <td>{product.imageUrl}</td>
-                <td>Edit Delete</td>
+                <td>
+                  <Link to={`edit/${product.id}`}>Edit</Link>|
+                   <Link to={`delete/${product.id}`}>Delete</Link>
+                </td>
               </tr>
             ))}
         </tbody>

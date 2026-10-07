@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import api from "../api/axios";
+import { Link } from "react-router-dom";
 export default function Home() {
   const [products, setProducts] = useState([]);
   const fetchProducts = async () => {
@@ -18,11 +19,15 @@ export default function Home() {
     <div className="flex flex-wrap justify-center">
       {products &&
         products.map((product) => (
-          <div key={product.id} className="w-[350px] m-3 p-3 rounded-xl border border-gray-900">
+          <div
+            key={product.id}
+            className="w-[350px] m-3 p-3 rounded-xl border border-gray-900">
+              <Link to={`product-details/${product.id}`}>
             <img src={product.imageUrl} alt="" />
             <h1>{product.name}</h1>
             <p>{product.description}</p>
-            <h2>{product.price}</h2>
+            <h2>₹{product.price}</h2>
+            </Link>
           </div>
         ))}
     </div>
