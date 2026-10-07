@@ -37,7 +37,7 @@ export default function Users() {
                 <td>{user.email}</td>
                 <td>{user.role}</td>
                 <td>
-                  <Link to={`users/edit/${user.id}`}>Edt</Link>
+                  <Link to={`users/edit/${user.id}`}>Edt</Link>|
                   <Link to={`users/delete/${user.id}`}>Delete</Link>
                 </td>
               </tr>

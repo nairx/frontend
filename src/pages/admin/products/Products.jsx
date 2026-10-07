@@ -28,6 +28,7 @@ export default function Products() {
             <th>Description</th>
             <th>Price</th>
             <th>Image Url</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -38,6 +39,7 @@ export default function Products() {
                 <td>{product.description}</td>
                 <td>{product.price}</td>
                 <td>{product.imageUrl}</td>
+                <td>Edit Delete</td>
               </tr>
             ))}
         </tbody>
