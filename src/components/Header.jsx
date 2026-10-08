@@ -7,6 +7,7 @@ export default function Header() {
       <nav className="*:p-1">
         <Link to="/">Home</Link>
         <Link to="cart">Cart</Link>
+        <Link to="order">Order</Link>
         <Link to="admin">Admin</Link>
         <Link to="login">Login</Link>
       </nav>

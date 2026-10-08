@@ -14,6 +14,8 @@ import DeleteProduct from "../pages/admin/products/DeleteProduct";
 import EditProduct from "../pages/admin/products/EditProduct";
 import ProductDetails from "../pages/ProductDetails";
 import Cart from "../pages/Cart";
+import Order from "../pages/Order";
+import Checkout from "../pages/Checkout";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,8 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "product-details/:id", element: <ProductDetails /> },
       { path: "cart", element: <Cart /> },
+      { path: "order", element: <Order /> },
+      {path:"checkout",element:<Checkout/>},
       {
         path: "login",
         element: <Login />,
